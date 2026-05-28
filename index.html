@@ -1,43 +1,198 @@
-<section>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agroforte | Futuro Sustentável</title>
 
-  <h2 class="titulo">Vozes do campo</h2>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family: 'Georgia', serif;
+      background-color:#f4f8f7;
+      color:#18332b;
+      line-height:1.8;
+    }
+
+    header{
+      height:100vh;
+      background: linear-gradient(rgba(10,30,40,0.5), rgba(10,30,40,0.6)),
+      url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1400&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero{
+      max-width:900px;
+    }
+
+    .hero h1{
+      font-size:70px;
+      margin-bottom:20px;
+      letter-spacing:2px;
+    }
+
+    .hero p{
+      font-size:22px;
+      opacity:0.95;
+    }
+
+    section{
+      padding:90px 12%;
+    }
+
+    .titulo{
+      font-size:42px;
+      margin-bottom:25px;
+      color:#204b5a;
+      border-left:6px solid #4f8f72;
+      padding-left:15px;
+    }
+
+    .texto{
+      font-size:20px;
+      color:#304b45;
+      text-align:justify;
+    }
+
+    .cards{
+      display:flex;
+      gap:30px;
+      flex-wrap:wrap;
+      margin-top:50px;
+    }
+
+    .card{
+      flex:1;
+      min-width:250px;
+      background:white;
+      padding:35px;
+      border-radius:20px;
+      box-shadow:0 5px 20px rgba(0,0,0,0.08);
+      text-align:center;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+    }
+
+    .numero{
+      font-size:55px;
+      color:#3b7a57;
+      font-weight:bold;
+      margin-bottom:15px;
+    }
+
+    .card p{
+      font-size:18px;
+      color:#45635c;
+    }
+
+    .imagem{
+      width:100%;
+      border-radius:25px;
+      margin-top:40px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    footer{
+      background:#18332b;
+      color:white;
+      text-align:center;
+      padding:30px;
+      font-size:16px;
+      margin-top:40px;
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:48px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+
+      .titulo{
+        font-size:32px;
+      }
+
+      .texto{
+        font-size:18px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="hero">
+    <h1>AGROFORTE</h1>
+    <p>
+      Futuro sustentável, equilíbrio entre produção e meio ambiente.
+    </p>
+  </div>
+</header>
+
+<section>
+  <h2 class="titulo">O equilíbrio entre produzir e preservar</h2>
 
   <p class="texto">
-    O futuro sustentável também é construído pelas pessoas que vivem diariamente no campo. 
-    Agricultores, produtores e trabalhadores rurais possuem um papel essencial na preservação ambiental 
-    e no fortalecimento da agricultura responsável.
+    O desenvolvimento sustentável no campo representa a união entre tecnologia, responsabilidade e respeito à natureza. 
+    O agronegócio moderno não busca apenas aumentar a produção, mas também preservar os recursos naturais para as próximas gerações. 
+    Através de práticas conscientes, é possível fortalecer a economia, garantir alimentos de qualidade e proteger o meio ambiente ao mesmo tempo.
+  </p>
+
+  <img class="imagem" src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1400&auto=format&fit=crop">
+</section>
+
+<section>
+
+  <h2 class="titulo">Um futuro sustentável começa no presente</h2>
+
+  <p class="texto">
+    Construir um futuro sustentável significa tomar decisões responsáveis hoje. O campo possui um papel essencial nesse processo, 
+    utilizando recursos naturais de forma inteligente, reduzindo impactos ambientais e promovendo inovação sustentável. 
+    Quando produção e preservação caminham juntas, toda a sociedade é beneficiada.
   </p>
 
   <div class="cards">
 
     <div class="card">
-      <div class="numero">“</div>
+      <div class="numero">85%</div>
       <p>
-        “Produzir com consciência é pensar nas próximas gerações. 
-        O campo precisa crescer junto com a preservação.”
+        das práticas agrícolas modernas já utilizam métodos mais sustentáveis.
       </p>
-      <br>
-      <strong>— Carlos Henrique, produtor rural</strong>
     </div>
 
     <div class="card">
-      <div class="numero">“</div>
+      <div class="numero">90%</div>
       <p>
-        “A sustentabilidade não é apenas uma escolha, 
-        mas uma necessidade para garantir o equilíbrio da natureza.”
+        de redução no desperdício pode ser alcançada com tecnologia no campo.
       </p>
-      <br>
-      <strong>— Marina Alves, agricultora</strong>
     </div>
 
     <div class="card">
-      <div class="numero">“</div>
+      <div class="numero">100%</div>
       <p>
-        “Tecnologia e responsabilidade ambiental podem caminhar juntas 
-        para transformar o futuro do agronegócio.”
+        compromisso com inovação, responsabilidade ambiental e desenvolvimento.
       </p>
-      <br>
-      <strong>— João Pedro, engenheiro agrônomo</strong>
     </div>
 
   </div>
@@ -46,51 +201,21 @@
 
 <section>
 
-  <h2 class="titulo">Tecnologia e inovação no campo</h2>
+  <h2 class="titulo">Agroforte e a valorização da natureza</h2>
 
   <p class="texto">
-    A tecnologia tem revolucionado a agricultura moderna, permitindo maior eficiência 
-    na produção e menor impacto ambiental. Máquinas inteligentes, irrigação sustentável 
-    e monitoramento climático são algumas das soluções que ajudam o campo a evoluir de forma consciente.
+    O projeto Agroforte representa a importância de enxergar o campo como um espaço de equilíbrio. 
+    Mais do que produzir, é necessário preservar rios, solos, florestas e toda a biodiversidade presente no ambiente rural. 
+    O crescimento sustentável acontece quando a produtividade é acompanhada de consciência ambiental, inovação e responsabilidade social.
   </p>
 
-  <img class="imagem" src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1400&auto=format&fit=crop">
+  <img class="imagem" src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1400&auto=format&fit=crop">
 
 </section>
 
-<section>
+<footer>
+  Agroforte • Futuro Sustentável • Equilíbrio entre produção e meio ambiente
+</footer>
 
-  <h2 class="titulo">Compromisso com as futuras gerações</h2>
-
-  <p class="texto">
-    Preservar o meio ambiente significa garantir qualidade de vida para o futuro. 
-    O desenvolvimento sustentável no campo busca manter o equilíbrio entre crescimento econômico, 
-    responsabilidade social e preservação da natureza, construindo um amanhã mais seguro e equilibrado.
-  </p>
-
-  <div class="cards">
-
-    <div class="card">
-      <div class="numero">70%</div>
-      <p>
-        do uso consciente da água pode ser ampliado com novas tecnologias agrícolas.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="numero">65%</div>
-      <p>
-        das propriedades rurais já adotam práticas sustentáveis em parte da produção.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="numero">95%</div>
-      <p>
-        das futuras gerações dependerão de ações sustentáveis realizadas no presente.
-      </p>
-    </div>
-
-  </div>
-
-</section>
+</body>
+</html>
