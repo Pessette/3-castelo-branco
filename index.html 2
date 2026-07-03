@@ -1,9 +1,218 @@
-📁 trabalho-livros/
-│── index.html
-│── style.css
-│── script.js
-│── 📁 img/
-│     ├── as-cerejas.jpg
-│     ├── mindset.jpg
-│     ├── autora1.jpg
-│     └── autora2.jpg
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Biblioteca | Apresentação</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+📚 Biblioteca
+</div>
+
+<div class="menu">
+<a href="#inicio">Início</a>
+<a href="#cerejas">As Cerejas</a>
+<a href="#mindset">Mindset</a>
+</div>
+
+</nav>
+
+<section id="inicio" class="slide">
+
+<h1>ANÁLISE LITERÁRIA</h1>
+
+<p>Inspirado no aplicativo Skeelo</p>
+
+<div class="livros">
+
+<div class="card">
+
+<img src="img/cerejas.jpg">
+
+<h2>As Cerejas</h2>
+
+<p>Lygia Fagundes Telles</p>
+
+</div>
+
+<div class="card">
+
+<img src="img/mindset.jpg">
+
+<h2>Mindset</h2>
+
+<p>Carol S. Dweck</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="cerejas" class="slide">
+
+<h1>As Cerejas</h1>
+
+<img src="img/cerejas.jpg" class="capa">
+
+<h2>Ficha Técnica</h2>
+
+<ul>
+
+<li>Autora: Lygia Fagundes Telles</li>
+
+<li>Gênero: Romance</li>
+
+<li>Editora: Atual</li>
+
+<li>11ª edição</li>
+
+</ul>
+
+</section>
+
+<section class="slide">
+
+<h1>Sobre a autora</h1>
+
+<img src="img/lygia.jpg" class="autor">
+
+<p>
+
+Lygia Fagundes Telles foi uma das maiores escritoras brasileiras.
+
+Recebeu diversos prêmios e destacou-se por romances e contos marcantes da literatura nacional.
+
+</p>
+
+</section>
+
+<section class="slide">
+
+<h1>Personagens</h1>
+
+<div class="personagem">
+
+<h2>Marcelo</h2>
+
+<p>Um dos personagens centrais da narrativa.</p>
+
+</div>
+
+<div class="personagem">
+
+<h2>Olívia</h2>
+
+<p>Importante para o desenvolvimento da história.</p>
+
+</div>
+
+</section>
+
+<section class="slide">
+
+<h1>Resumo</h1>
+
+<p>
+
+A obra apresenta uma narrativa envolvente cheia de lembranças, conflitos e relações familiares.
+
+O final não será revelado para incentivar a leitura.
+
+</p>
+
+</section>
+
+<section id="mindset" class="slide">
+
+<h1>Mindset</h1>
+
+<img src="img/mindset.jpg" class="capa">
+
+<h2>Ficha Técnica</h2>
+
+<ul>
+
+<li>Autora: Carol S. Dweck</li>
+
+<li>Gênero: Desenvolvimento Pessoal</li>
+
+<li>Editora: Objetiva</li>
+
+</ul>
+
+</section>
+
+<section class="slide">
+
+<h1>Sobre a autora</h1>
+
+<img src="img/carol.jpg" class="autor">
+
+<p>
+
+Carol Dweck é psicóloga e professora da Universidade Stanford.
+
+É reconhecida mundialmente por suas pesquisas sobre motivação e aprendizagem.
+
+</p>
+
+</section>
+
+<section class="slide">
+
+<h1>Mindset</h1>
+
+<div class="personagem">
+
+<h2>Mindset Fixo</h2>
+
+<p>Acredita que habilidades são imutáveis.</p>
+
+</div>
+
+<div class="personagem">
+
+<h2>Mindset de Crescimento</h2>
+
+<p>Acredita que qualquer pessoa pode evoluir com dedicação.</p>
+
+</div>
+
+</section>
+
+<section class="slide">
+
+<h1>Resumo</h1>
+
+<p>
+
+O livro explica como nossa forma de pensar influencia nossos resultados na escola, no trabalho e na vida.
+
+</p>
+
+</section>
+
+<section class="slide final">
+
+<h1>Obrigado!</h1>
+
+<p>Alguma pergunta?</p>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
