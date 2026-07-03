@@ -491,7 +491,114 @@ width:250px;
 p{
 
 font-size:18px;
+// Navegação suave pelos links do menu
+document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        const destino = document.querySelector(this.getAttribute("href"));
+
+        destino.scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+});
+
+// Animação ao aparecer na tela
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+        }
+
+    });
+
+}, {threshold:0.3});
+
+document.querySelectorAll(".slide").forEach(slide=>{
+
+    slide.style.opacity="0";
+    slide.style.transform="translateY(40px)";
+    slide.style.transition="1s";
+
+    observer.observe(slide);
+
+});
+
+// Efeito nos cards
+document.querySelectorAll(".card").forEach(card=>{
+
+    card.addEventListener("mouseenter",()=>{
+
+        card.style.transform="translateY(-12px) scale(1.03)";
+
+    });
+
+    card.addEventListener("mouseleave",()=>{
+
+        card.style.transform="translateY(0) scale(1)";
+
+    });
+
+});
+
+// Navegação com as setas do teclado
+const slides = document.querySelectorAll(".slide");
+let atual = 0;
+
+function mostrarSlide(i){
+    slides[i].scrollIntoView({
+        behavior:"smooth"
+    });
+}
+
+document.addEventListener("keydown",(e)=>{
+
+    if(e.key==="ArrowRight" || e.key==="PageDown"){
+
+        if(atual < slides.length-1){
+            atual++;
+            mostrarSlide(atual);
+        }
+
+    }
+
+    if(e.key==="ArrowLeft" || e.key==="PageUp"){
+
+        if(atual > 0){
+            atual--;
+            mostrarSlide(atual);
+        }
+
+    }
+
+});
+
+// Atualiza o slide atual ao rolar
+window.addEventListener("scroll",()=>{
+
+    slides.forEach((slide,index)=>{
+
+        const topo = slide.getBoundingClientRect().top;
+
+        if(Math.abs(topo) < 250){
+
+            atual = index;
+
+        }
+
+    });
+
+});
+
+// Mensagem final
+console.log("Apresentação carregada com sucesso!");
 
 }
 
 }
+
