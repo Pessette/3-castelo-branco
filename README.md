@@ -1,0 +1,1 @@
+Trabalho sobre o Colégio estadual do campo castelo branco que neta pagina vai conter um resumo e um breve tuhr oline pelo colégio. Sera e modo legante e delicado com a pagina principal valando o colegeio e apartir iso havera um botão onde a pessoas coneguirão ver a ecola oline com videos que etao entro o pagina web
